@@ -1,0 +1,11 @@
+#vhost template file
+
+<VirtualHost *:<%= @port %> >
+	
+	ServerName <%= @domain %>
+	DocumentRoot <%= @document_root %>
+
+   <Directory />
+      Options FollowSymLinks
+      AllowOverride None
+   
